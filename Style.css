@@ -3,3 +3,107 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  /* font-type */
+  --prim-font-Michroma: "Michroma", sans-serif;
+
+  /* Color palette */
+  --prim-white: #fff;
+  --prim-black: #000;
+}
+
+body {
+  width: 100vw;
+  background-color: white;
+  background-image: url(Images/Group\ 2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li {
+  font-family: var(--prim-font-Michroma);
+  color: var(--prim-white);
+}
+
+li {
+  font-size: 0.7rem;
+}
+
+ul {
+  padding-left: 15px;
+  padding-top: 10px;
+}
+
+.intro {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#intro-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -100vh;
+}
+
+#mars {
+  display: flex;
+  width: 632px;
+  height: 632px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+#facts,
+#expeditions,
+#about,
+#x-files {
+  width: 50vw;
+  height: 50vh;
+  flex-shrink: 0;
+  position: relative;
+  display: inline-block;
+}
+
+#facts,
+#expeditions,
+#about,
+#x-files img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  position: absolute;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
