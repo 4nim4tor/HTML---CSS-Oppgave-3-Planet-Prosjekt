@@ -17,18 +17,26 @@ body {
   width: 100vw;
   background-color: white;
   background-image: url(Images/Group\ 2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  position: sticky;
+  background-repeat: repeat;
+  background-position: relative;
+  background-size: 100vw;
   top: 0;
 }
 
-section {
+article {
   width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
 }
 
 h1,
@@ -48,7 +56,7 @@ li {
 }
 
 ul {
-  padding-left: 15px;
+  /*   padding-left: 15px; */
   padding-top: 10px;
 }
 
@@ -80,6 +88,7 @@ main {
   align-items: flex-start;
   font-size: small;
   text-align: center;
+  margin: 11px;
 }
 
 .logo p {
@@ -202,13 +211,35 @@ a {
   padding: 50px 0px;
 }
 
+#expeditions {
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 72px 20px;
+  gap: 100px;
+}
+
+#x-files {
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 50px 0px;
+}
+
 .main-h2 {
   text-align: center;
-  font-family: Michroma;
+  font-family: var(--prim-font-Michroma);
   font-size: 48px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin: 1rem;
   background: linear-gradient(90deg, #f77e00 0%, #914a00 24.66%);
   background-clip: text;
   -webkit-background-clip: text;
@@ -231,6 +262,12 @@ a {
   align-self: stretch;
 }
 
+.v-expeditions {
+  width: 1200px;
+  height: 800px;
+  aspect-ratio: 3/2;
+}
+
 .about-text {
   width: 1100px;
   height: 635px;
@@ -238,6 +275,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  line-height: 2;
 }
 
 .about-text p {
@@ -250,4 +288,116 @@ a {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.fix {
+  margin-left: 200px;
+}
+
+.landers {
+  display: flex;
+  height: 650px;
+  padding: 19px 42px 19px 42px;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+  align-self: stretch;
+}
+
+#landers {
+  display: flex;
+  width: 550px;
+  height: 650px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.8;
+}
+
+.link-1 {
+  display: flex;
+  width: 1130px;
+  height: 260px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: #3c3838;
+  backdrop-filter: blur(2px);
+  margin: 8rem 0px 8rem 0px;
+}
+
+.text-link {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-link p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.link-1 img {
+  width: 425px;
+  height: 240px;
+  flex-shrink: 0;
+  aspect-ratio: 425/240;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+.svglink {
+  width: 100px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  margin-inline: auto;
+  background-image: url(Images/noto_play-button.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+}
+
+.fun-5 {
+  align-self: stretch;
+}
+
+.ff5 {
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: normal;
+  background: linear-gradient(90deg, #f77e00 55.77%, #999 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.img-fun5 {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-fun5 img {
+  width: 1200px;
+  height: 750px;
+  flex-shrink: 0;
+  aspect-ratio: 1200/750;
+}
+
+.the-facts {
+  width: 1200px;
+  height: 1200px;
+  flex-shrink: 0;
+}
+
+ol {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
 }
