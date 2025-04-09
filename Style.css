@@ -174,12 +174,20 @@ a {
   align-items: center;
 }
 
+#text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #facts {
   display: flex;
   width: 80vw;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   gap: 66px;
   padding: 60px;
 }
@@ -187,11 +195,11 @@ a {
 #about {
   display: flex;
   width: 80vw;
-  padding: 50px 0px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+  padding: 50px 0px;
 }
 
 .main-h2 {
@@ -213,8 +221,33 @@ a {
 }
 
 .v-about {
-  width: 1200px;
+  display: flex;
   height: 750px;
+  padding: 57px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   flex-shrink: 0;
-  aspect-ratio: 1187/749;
+  align-self: stretch;
+}
+
+.about-text {
+  width: 1100px;
+  height: 635px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text p {
+  background: linear-gradient(
+    180deg,
+    #fff 0%,
+    rgba(255, 255, 255, 0.85) 25.48%,
+    rgba(255, 255, 255, 0.5) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
