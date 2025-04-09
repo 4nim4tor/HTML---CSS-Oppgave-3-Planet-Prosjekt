@@ -13,7 +13,7 @@
     />
   </head>
   <body>
-    <section>
+    <section class="intro">
       <div class="intro">
         <div id="mars">
           <img src="Images/Mars.png" alt="Mars" />
@@ -22,7 +22,7 @@
     </section>
     <section id="intro-nav">
       <nav class="intro-nav">
-        <div id="expeditions">
+        <div id="nav-expeditions">
           <div class="nav-img">
             <img src="Images/Group 5.svg" alt="" />
             <div class="text">
@@ -35,7 +35,7 @@
             </div>
           </div>
         </div>
-        <div id="facts">
+        <div id="nav-facts">
           <div class="nav-img">
             <img src="Images/Group 4.svg" alt="" />
             <div class="text">
@@ -48,7 +48,7 @@
             </div>
           </div>
         </div>
-        <div id="x-files">
+        <div id="nav-x-files">
           <div class="nav-img">
             <img src="Images/Group 6.svg" alt="" />
             <div class="text">
@@ -64,7 +64,7 @@
             </div>
           </div>
         </div>
-        <div id="about">
+        <div id="nav-about">
           <div class="nav-img">
             <img src="Images/Group 3.svg" alt="" />
             <div class="text">
@@ -79,5 +79,58 @@
         </div>
       </nav>
     </section>
+    <main>
+      <nav id="main-nav">
+        <div class="logo">
+          <img src="Images/image 4.png" alt="Logo" />
+          <p>Our hope for the future</p>
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a href="#intro-nav">Home</a></li>
+            <li><a href="#facts">Facts</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#expeditions">Expeditions</a></li>
+            <li><a href="#x-files">X-files</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="facts">
+        <h2 class="main-h2">Facts</h2>
+        <div class="img-facts">
+          <img src="Images/mars-facts.jpg" alt="facts of mars" />
+        </div>
+      </div>
+      <div id="about">
+        <h2 class="main-h2">About</h2>
+        <video
+          class="v-about"
+          src="Media/Floating mars.mp4"
+          width="600px"
+          loop
+          autoplay
+        >
+          <p>
+            Discovery: Mars has been known since ancient times, with telescopic
+            observations beginning in the 1600s by Galileo. <br />
+            Name: It’s named after the Roman god of war due to its red color,
+            which resembles blood. <br />
+            Size & Orbit: Mars is about half the size of Earth, with a diameter
+            of 6,779 km. It orbits the Sun at 227.9 million km and has seasons
+            like Earth but longer. <br />
+            Atmosphere: Very thin, mostly carbon dioxide, with little protection
+            from radiation. Moons: Mars has two small moons, Phobos and Deimos,
+            thought to be captured asteroids. Exploration: Mars has been studied
+            since the 1960s. Notable missions include NASA's Viking (1976),
+            Curiosity Rover (2012), and Perseverance Rover (2020). Key Features:
+            It has the tallest volcano, Olympus Mons, and the longest canyon,
+            Valles Marineris. Search for Life: Evidence of water suggests Mars
+            may have supported microbial life in the past.
+          </p>
+        </video>
+      </div>
+      <div id="expeditions"></div>
+      <div id="x-files"></div>
+    </main>
   </body>
 </html>
